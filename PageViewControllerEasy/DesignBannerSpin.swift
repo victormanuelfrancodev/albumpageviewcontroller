@@ -3,7 +3,7 @@
 //  YaGanaste
 //
 //  Created by Victor on 4/27/17.
-//  Copyright © 2017 Paga Todo. All rights reserved.
+//  Copyright ©
 //
 
 import UIKit
