@@ -1,24 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Futura.ttc">
+            <string>Futura-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Design Banner Spin-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ExampleViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="DesignBannerSpin" customModule="PageViewControllerEasy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dNb-c9-waW">
+                                <rect key="frame" x="0.0" y="79" width="375" height="588"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TItulo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fI4-wg-Fi9">
+                                <rect key="frame" x="52" y="50" width="271" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="271" id="9H1-Qp-awW"/>
+                                    <constraint firstAttribute="height" constant="21" id="pUs-uU-pQB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="DZm-iZ-qx0">
+                                <rect key="frame" x="168" y="610" width="39" height="37"/>
+                            </pageControl>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DZm-iZ-qx0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NJb-AD-uBn"/>
+                            <constraint firstItem="dNb-c9-waW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QVX-1w-Sxt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DZm-iZ-qx0" secondAttribute="bottom" constant="20" id="UbB-7j-lzB"/>
+                            <constraint firstItem="fI4-wg-Fi9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VDV-9C-isq"/>
+                            <constraint firstItem="dNb-c9-waW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bak-vj-fcZ"/>
+                            <constraint firstItem="dNb-c9-waW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="csJ-wT-kOI"/>
+                            <constraint firstItem="dNb-c9-waW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="79" id="jfk-Bd-JAT"/>
+                            <constraint firstItem="fI4-wg-Fi9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="vJ2-kp-Bw0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="dNb-c9-waW" id="zER-Ms-dw7"/>
+                        <outlet property="pageControl" destination="DZm-iZ-qx0" id="w36-xv-Qjs"/>
+                        <outlet property="titleLabel" destination="fI4-wg-Fi9" id="atm-F4-d6B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="30.134932533733135"/>
         </scene>
     </scenes>
 </document>

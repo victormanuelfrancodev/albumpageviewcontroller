@@ -14,6 +14,7 @@
 		FA0E225D1FE64E8100FC921C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA0E225B1FE64E8100FC921C /* LaunchScreen.storyboard */; };
 		FA0E22681FE64E8200FC921C /* PageViewControllerEasyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E22671FE64E8200FC921C /* PageViewControllerEasyTests.swift */; };
 		FA0E22731FE64E8200FC921C /* PageViewControllerEasyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E22721FE64E8200FC921C /* PageViewControllerEasyUITests.swift */; };
+		FA0E22831FE64EE600FC921C /* DesignBannerSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E22821FE64EE600FC921C /* DesignBannerSpin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		FA0E226E1FE64E8200FC921C /* PageViewControllerEasyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PageViewControllerEasyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0E22721FE64E8200FC921C /* PageViewControllerEasyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewControllerEasyUITests.swift; sourceTree = "<group>"; };
 		FA0E22741FE64E8200FC921C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA0E22821FE64EE600FC921C /* DesignBannerSpin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignBannerSpin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				FA0E22561FE64E8100FC921C /* Main.storyboard */,
 				FA0E22591FE64E8100FC921C /* Assets.xcassets */,
 				FA0E225B1FE64E8100FC921C /* LaunchScreen.storyboard */,
+				FA0E22821FE64EE600FC921C /* DesignBannerSpin.swift */,
 				FA0E225E1FE64E8100FC921C /* Info.plist */,
 			);
 			path = PageViewControllerEasy;
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0E22551FE64E8100FC921C /* ViewController.swift in Sources */,
+				FA0E22831FE64EE600FC921C /* DesignBannerSpin.swift in Sources */,
 				FA0E22531FE64E8100FC921C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +433,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UFL2WNBTT3;
 				INFOPLIST_FILE = PageViewControllerEasy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pageviewcontroller.easy.PageViewControllerEasy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +449,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UFL2WNBTT3;
 				INFOPLIST_FILE = PageViewControllerEasy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pageviewcontroller.easy.PageViewControllerEasy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
